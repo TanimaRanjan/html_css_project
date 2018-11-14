@@ -1,0 +1,115 @@
+/*animatedphotostyle.css*/
+
+body {
+    /*    background: url('../images/dark_geometric.png');*/
+}
+
+
+.container {
+    margin: 100px auto 40px;
+    /*    padding: 200px;*/
+    /*    border: 2px solid black;*/
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+}
+
+
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+    transition: all 1s ease;
+}
+
+#cube figure {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    /* Choose absolute to move in 1 row */
+    /* remove absolute to make it move in a wave */
+    width: 196px;
+    height: 196px;
+    /*    left: 10px;*/
+    /*    top: 10px;*/
+    border: 2px solid black;
+    /*    line-height: 116px;*/
+    font-size: 80px;
+    /*    font-weight: bold;*/
+    color: white;
+    text-align: center;
+    transition: all 1s ease;
+    /*    background: hsla( 0, 100%, 50%, 0.8);*/
+    /*    animation: bannermove 10s linear infinite;*/
+    animation-play-state: paused;
+}
+
+
+#cube figure:nth-child(1) {
+    /*    animation: bannermove 20s linear infinite;*/
+    background: hsla( 0, 100%, 50%, 0.8);
+    transform: rotateY(0deg) translateZ(100px);
+
+}
+
+#cube figure:nth-child(2) {
+    /*    animation: bannermove2 20s linear infinite;*/
+    background: hsla( 40, 100%, 50%, 0.8);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube figure:nth-child(3) {
+    /*    animation: bannermove3 20s linear infinite;*/
+    background: hsla( 280, 100%, 50%, 0.8);
+    transform: rotateX(180deg)translateZ(100px);
+}
+
+#cube figure:nth-child(4) {
+    /*    animation: bannermove4 20s linear infinite;*/
+    background: hsla( 240, 100%, 50%, 0.8);
+    transform: rotateY(270deg) translateZ(100px);
+}
+
+#cube figure:nth-child(5) {
+    /*    animation: bannermove5 20s linear infinite;*/
+    background: hsla( 200, 100%, 50%, 0.8);
+    transform: rotateY(0deg) rotateX(90deg) translateZ(100px);
+}
+
+#cube figure:nth-child(6) {
+    /*    animation: bannermove6 20s linear infinite;*/
+    background: hsla( 160, 100%, 50%, 0.8);
+    transform: rotateY(0deg) rotateX(-90deg) translateZ(100px);
+}
+
+
+#cube.spinning {
+    transform-origin: 50% 50%;
+    box-shadow: 2px 2px 5px;
+    animation: cubespin 8s ease-in-out infinite;
+}
+
+
+#cube:hover {
+    animation-play-state: paused;
+
+}
+
+@keyframes cubespin {
+    0% {
+        transform: translateZ(-100px) rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: translateZ(-100px) rotateY(360deg) rotateX(360deg);
+    }
+}
+
+
+img {
+    width: 196px;
+    height: 196px;
+}
