@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background: #131212;
+}
+
+.masonry {
+    /*
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 300vw;
+    max-height: 6800px;
+    font-size: 0;
+*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vw;
+
+}
+
+.masonry img {
+    width: 33.3%;
+    transition: .8s opacity;
+    border: 1px solid #131212;
+    padding: 2px;
+    margin: 2px;
+    transition: 0.5s linear all;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px black,
+    inset 2px 2px 3px white;
+}
+
+.masonry:hover img {
+    opacity: 0.3;
+}
+
+.masonry:hover img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+
+@media all and (max-width:600px) {
+    .masonry img {
+        column-count: 2;
+        width: 47%;
+    }
+    .masonry {
+        column-count: 2;
+        height: 610vw;
+
+    }
+}
