@@ -1,0 +1,16 @@
+.form-control-css {
+    background-color: grey;
+    border: none;
+    color: white;
+}
+
+.form-control-css::placeholder {
+    color: white;
+}
+
+.input-grp-text-css {
+    background-color: grey;
+    border: none;
+    color: white;
+
+}
