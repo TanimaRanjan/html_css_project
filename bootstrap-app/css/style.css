@@ -14,3 +14,36 @@
     color: white;
 
 }
+
+.page-header {
+    padding-bottom: 9px;
+    margin: :40px 0 20px;
+    border-bottom: 1px solid #eee
+}
+
+.carousel-inner > .carousel-item > img {
+    display: block;
+    margin: 0 auto;
+    line-height: 1;
+
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+
+/*
+EERIE BLACK #1D1D1D
+JET #333333
+ANTIQUE BRONZE #6A5C0F
+TROLLEY GREY #7B7B7B
+ANTI-FLASH WHITE #F1F1F1
+
+SNOW #F9F9F9
+BRIGHT CERULEAN #0DA6D8
+JET #333333
+BABY POWDER #FDFDF7
+SILVER CHALICE #AFAEAF
+*/
