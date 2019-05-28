@@ -18,15 +18,17 @@ body {
     max-height: 6800px;
     font-size: 0;
 */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    /*    display: -webkit-box;*/
+    /*    display: -ms-flexbox;*/
+    /*    -webkit-box-orient: vertical;*/
+    /*    -webkit-box-direction: normal;*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 90vw;
-
+    height: 300vw;
+    max-height: 6800px;
+    /*    width: 100%;*/
+    /*    font-size: 0;*/
 }
 
 .masonry img {
@@ -37,8 +39,8 @@ body {
     margin: 2px;
     transition: 0.5s linear all;
     border-radius: 1em;
-    box-shadow: 2px 2px 5px black,
-    inset 2px 2px 3px white;
+    box-shadow: 1px 1px 3px black,
+    inset 2px 2px 3px #efefef;
 }
 
 .masonry:hover img {
