@@ -26,19 +26,19 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     height: 300vw;
-    max-height: 6800px;
+    max-height: 3920px;
     /*    width: 100%;*/
     /*    font-size: 0;*/
 }
 
 .masonry img {
-    width: 33.3%;
+    width: 33%;
     transition: .8s opacity;
-    border: 1px solid #131212;
-    padding: 2px;
-    margin: 2px;
+    border: 0.5px solid #131212;
+    padding: 1px;
+    margin: 1px;
     transition: 0.5s linear all;
-    border-radius: 1em;
+    border-radius: 0.3em;
     box-shadow: 1px 1px 3px black,
     inset 2px 2px 3px #efefef;
 }
@@ -49,7 +49,7 @@ body {
 
 .masonry:hover img:hover {
     opacity: 1;
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 
