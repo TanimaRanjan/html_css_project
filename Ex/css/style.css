@@ -1,0 +1,118 @@
+body {
+    width: 1250px;
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    /*    border: 2px solid red;*/
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+    left 0px;
+    margin-top: 0px;
+    background-color: #efefef;
+    padding: 10px;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+h1 {
+    margin-top: 100px;
+    /*/ position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 250px;
+    background-color: #efefef;
+    padding: 10px;*/
+    /*    position: fixed;*/
+    /*    top: 0px;*/
+    /*    left: 0px;*/
+    /*    margin-top: 0px;*/
+    /*    background-color: #efefef;*/
+    /*    padding: 10px;*/
+    /*    width: 100%;*/
+    /*    z-index: 10;*/
+}
+
+p {
+    position: relative;
+    /*    margin-top: 70px;*/
+    width: 450px;
+
+}
+
+p.top {
+    margin-top: 80px;
+}
+
+p.example {
+    position: relative;
+    /*    top: 10px;*/
+    left: 80px;
+
+}
+
+blockquote {
+    float: right;
+    width: 275px;
+    font-size: 130%;
+    font-style: italic;
+    font-family: Georgia, Times, serif;
+    margin: 0px 0px 10px 10px;
+    padding: 10px;
+    border-top: 1px solid #665544;
+    border-bottom: 1px solid #665544;
+}
+
+.sample {
+    width: 200px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: #efefef;
+
+}
+
+.clear {
+    clear: left;
+}
+
+.borderDiv {
+    border: 1px solid black;
+    overflow: auto;
+    width: 100%;
+}
+
+.col1of2 {
+    width: 500px;
+    float: left;
+    margin: 10px;
+
+}
+
+.col2of2 {
+    float: left;
+    width: 200px;
+}
+
+/* 
+Nulla eleifend sem ac nibh mollis, at tempus massa pharetra. Nunc in pellentesque nunc. Phasellus non lobortis purus. Fusce at tincidunt mauris, tincidunt euismod nunc. Donec congue bibendum dui. Vivamus convallis luctus tristique. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget metus ut tortor pretium rutrum. Curabitur laoreet finibus ligula ut porta. Praesent dignissim eget neque nec imperdiet. Vestibulum interdum justo sem, et maximus quam rhoncus at. Sed mattis, neque ac tristique ultrices, elit arcu venenatis sapien, eu fermentum dolor lectus ut urna. Suspendisse potenti.
+
+Nunc quis fringilla neque. Morbi nec nisl lorem. Curabitur bibendum viverra ex, ut viverra purus tempor quis. Quisque mi dolor, efficitur et suscipit eget, efficitur eget nunc. Nulla rhoncus faucibus diam, at egestas dolor auctor eu. Sed eget nisi sit amet sem molestie rhoncus quis ut nunc. Mauris tristique sem quis dignissim luctus. Vestibulum euismod eros vitae semper accumsan. Pellentesque nisl nulla, ultrices quis enim ut, suscipit cursus turpis. Vivamus a molestie purus. Cras turpis ligula, ullamcorper eu ligula eget, imperdiet porttitor mi. Nam nec tellus a libero dictum posuere vel vel nisl. Sed in magna mauris. In hendrerit quam sit amet vulputate tempor. Maecenas nec scelerisque justo. Cras porta varius rhoncus.
+
+Sed id lacus auctor felis placerat luctus id gravida sapien. Ut quam arcu, ornare vel orci sed, ornare gravida leo. Sed ultricies nisl eu magna aliquet, eu accumsan purus accumsan. Nunc posuere scelerisque dolor sit amet tristique. Vestibulum sollicitudin dignissim commodo. Maecenas et magna erat. Vivamus faucibus lorem eu nisl congue lacinia. Sed aliquet lorem venenatis ornare aliquet. Pellentesque sem magna, pellentesque vitae diam sit amet, feugiat finibus nisl. Mauris et imperdiet nunc. Vivamus a egestas turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ornare nulla sed ex volutpat, a iaculis odio bibendum.
+
+Donec convallis rutrum feugiat. Cras dui metus, dignissim eu luctus nec, sodales nec mauris. Fusce arcu elit, facilisis sed condimentum vel, mollis eget est. Donec euismod pretium ex, eget euismod erat elementum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit metus molestie, posuere massa nec, fringilla est. Vestibulum at mattis ex, et fringilla ex. Phasellus tincidunt egestas risus, sit amet molestie tellus placerat ac. In lacinia nisl ut volutpat rutrum. Vivamus ac leo at justo consectetur lobortis. Nullam scelerisque elit ac lacus semper, in viverra ligula auctor. Maecenas ultrices, augue sit amet condimentum euismod, sem leo finibus ex, ut sodales velit libero consectetur nunc. Sed nec convallis est. Vivamus mattis volutpat ipsum sed elementum.
+
+*/
