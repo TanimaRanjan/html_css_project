@@ -1,0 +1,34 @@
+// Clear float
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear:both;
+        display: table;
+    }
+}
+
+// Place in absolute center
+@mixin absolute-center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+//  box-shadow: 0 2rem 4rem rgba($color-black, 0.5);
+
+@mixin boxShadow {
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.5);
+}
+
+// Media query manager 
+/* 
+$tablet-landscape-breakpoint:1200px;
+$tablet-potrait-breakpoint:900px;
+$mobile-breakpoint:600px;
+*/
+
+@mixin respond-phone {
+    @media  (max-width:$mobile-breakpoint) {
+        @content;
+    }
+}

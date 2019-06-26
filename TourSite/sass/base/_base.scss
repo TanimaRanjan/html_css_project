@@ -1,0 +1,20 @@
+
+*,
+*::after,
+*::before {
+    /* Remove default margin and padding*/
+    margin:0px;
+    padding: 0px;
+    /* Box sizing - border box  - Border and padding are not added to total width or heigth of box*/
+    box-sizing: inherit;
+}
+
+html {
+    font-size:62.5%; 
+    /* font-size:10px;  */
+
+}
+
+body {
+    box-sizing: border-box;
+}

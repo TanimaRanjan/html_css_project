@@ -1,0 +1,56 @@
+.section-about {
+    background-color: $light-grey;
+    padding: 25rem;
+    margin-top:-20vh;
+}
+
+
+.section-feature {
+    margin-top:-10rem;
+    padding:20rem 0;
+    background-image: linear-gradient(
+        to right,
+     rgba($color-primary-light, 0.8),
+     rgba($color-primary-dark, 0.8)), 
+    url('../../images/nat-4.jpg');
+    background-size: cover;
+    // background-position: top;
+    // position: relative;
+    //  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+
+.section-tours {
+    background-color: $light-grey;
+    padding: 20rem 0 15rem 0;
+    margin-top:-10vh;
+    // border: 1px solid black;
+}
+
+.section-stories {
+    position: relative;
+    padding: 15rem 0;
+}
+
+.section-book {
+    padding:15rem 0;
+    background: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+}
+.book {
+    background:linear-gradient(105deg, rgba($color-white, .9) 50%, transparent 50%), url('../images/nat-10.jpg');
+    background-size: cover;
+    height: 50rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}

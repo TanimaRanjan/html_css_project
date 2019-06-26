@@ -1,0 +1,103 @@
+
+.popup {
+    height: 100vh;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba($color-black, 0.8);
+    z-index: 3000;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-out;
+
+
+    // pseudo class target - when a button is clcked to target something
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__content {
+        @include absolute-center ;
+        @include boxShadow;
+        // height: 50%;
+        width: 75%;
+        background: rgba($color-white, 0.9);
+        border-radius: 3px;
+        
+        display:table;
+        overflow: hidden;
+
+        
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3);
+        transition: all .4s .2s;
+
+    }
+
+    &__left {
+        width: 33.333333%;
+        // float:left;
+        display: table-cell;
+
+        //image overlapping border 
+
+    }
+
+    &__right {
+        width: 66.666666%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+
+    &__img {
+        // Images should always be displayed as block
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+        font-size:1.4rem;
+        margin-bottom:4rem;
+
+        column-count:2;
+        column-gap:4rem;
+        column-rule: 1px solid $color-dark-grey;
+        
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+
+        hyphens: auto;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color:$color-dark-grey;
+            position: absolute;
+            font-size: 3rem;
+            top:3rem;
+            right:6rem;
+            text-decoration: none;
+            display:inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+        
+        &:hover {
+            color:$color-primary;
+        }
+
+    }
+}
