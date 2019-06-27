@@ -27,8 +27,30 @@ $tablet-potrait-breakpoint:900px;
 $mobile-breakpoint:600px;
 */
 
-@mixin respond-phone {
-    @media  (max-width:$mobile-breakpoint) {
-        @content;
+// @mixin respond-phone {
+//     @media  (max-width:$mobile-breakpoint) {
+//         @content;
+//     }
+// }
+
+/*
+$big-desktop-bp:1800px;
+$tab-land-bp:1200px;
+$tab-port-bp:900px;
+$mobile-bp:600px;
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width:$phone-bp) {  @content };
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width:$tab-port-bp) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width:$tab-land-bp) { @content };
+    }
+    @if $breakpoint == big-desktop { 
+        @media (max-width:$big-desktop-bp) { @content }
     }
 }
