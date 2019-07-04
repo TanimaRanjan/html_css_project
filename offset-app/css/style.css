@@ -1,0 +1,22 @@
+.form-control-css {
+    background-color: grey;
+    border: none;
+    color: white;
+}
+
+.form-control-css::placeholder {
+    color: white;
+}
+
+.input-grp-text-css {
+    background-color: grey;
+    border: none;
+    color: white;
+
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: :40px 0 20px;
+    border-bottom: 1px solid #eee
+}
