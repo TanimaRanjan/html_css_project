@@ -1,0 +1,221 @@
+.main {
+
+    &__logo {
+
+    }
+
+    &__menu {
+
+     }
+
+}
+
+
+.speciality {
+    margin: 30px auto;
+    max-width: 960px;
+
+    background-color:white;
+    display: block;
+    &__image {
+        width: 100%;
+        box-shadow: 0 1rem 3rem rgba($color-black, .3);
+        border-radius:2px;
+    }
+
+    &__title {
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+
+    &__paragraph {
+            // font-size: 1.4rem;
+            padding-left: 30px;
+            &:not(:last-child) {
+                // margin-bottom: 2rem;
+                margin-top: 30px;
+
+            }
+            &:last-child {
+                // margin-bottom: 4rem;
+                  margin-top: 30px;
+            }
+
+            
+        }
+}
+
+
+.individual {
+    margin: 30px auto;
+    width: 960px;
+
+    background-color:white;
+    display: block;
+    &__image {
+        width: 100%;
+        box-shadow: 0 1rem 3rem rgba($color-black, .3);
+        border-radius:2px;
+    }
+
+    &__title {
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+
+    &__paragraph {
+       
+            font-size: 1.4rem;
+            padding-left: 30px;
+            &:not(:last-child) {
+                // margin-bottom: 2rem;
+                margin-top: 30px;
+
+            }
+            &:last-child {
+                // margin-bottom: 4rem;
+                margin-top: 30px;
+            }
+            
+        }
+}
+
+
+a:link, 
+a:visited {
+    color:currentColor;
+    text-decoration: underline;
+    font-weight: 400;
+
+}
+
+
+
+.payment {
+    margin: 30px auto;
+    width: 960px;
+    display:flex;
+
+    background-color:white;
+    display: block;
+    &__image {
+        width: 100%;
+        box-shadow: 0 1rem 3rem rgba($color-black, .3);
+        border-radius:2px;
+    }
+
+    &__title {
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+
+    &__paragraph {
+            font-size: 1.4rem;
+            padding-left: 30px;
+
+            &:not(:last-child) {
+                margin-top: 30px;
+                margin-bottom: 3rem;
+
+            }
+            &:last-child {
+                margin-bottom: 4rem;
+            }
+        }
+}
+
+.row-grid {
+
+    width: 960px;
+    display:grid;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-content: stretch;
+    align-content: stretch;
+    align-items: stretch;
+
+    grid-gap: 30px;
+
+}
+
+
+.feature {
+    backface-visibility: hidden;
+    background-color: rgba($color-white, 0.8);
+    font-size: 1.5rem;
+    padding:4rem;
+    
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    transition :all .3s ease-out;
+    // transform: skewY(7deg);
+    // border: 2px solid black;
+    &__icon {
+        font-size :5rem;
+        margin-bottom: .5rem;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent;
+    }
+    &:hover {
+        // transform: translateY(-1.5rem) scale(1.03);
+        -webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */
+        filter: brightness(100%);
+        
+    }
+}
+
+
+.about__name {
+    font-weight: 600;
+    // text-transform: uppercase;
+}
+
+
+.header {
+   
+    position: relative;
+    &__nav {
+        background: grey;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        text-align: center;
+        box-shadow: 0px 0px 2px black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+
+    }
+
+    &__logo {
+        display: inline-block;
+        // border: 2px solid resd;
+    }
+
+    &__menu {
+        // border: 2px solid blue;
+        display: inline-block;
+    }
+
+    &__list {
+        // border: 2px solid pink;
+        list-style: none;
+        // display: flex;
+        // flex-direction: column;
+    }
+
+    &__item {
+        // border: 2px solid springgreen;
+        color:white;
+        display: inline-block ;
+    }
+}
