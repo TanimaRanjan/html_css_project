@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
     "watch:sass": "node-sass sass/main.scss styles/style.css --watch",
-    "dev-server":"live-server",
-    "start":"npm-run-all --parallel dev-server watch:sass",
-    
+    "dev-server": "live-server",
+    "start": "npm-run-all --parallel dev-server watch:sass",
     "compile:sass": "node-sass sass/main.scss styles/style.comp.css",
     "concat:css": "concat -o styles/style.concat.css styles/icon-font.css styles/style.comp.css",
     "postfix:css": "postcss --user autoprefixer -b 'last 10 versions' styles/style.concat.css -o styles/style.prefix.css",
