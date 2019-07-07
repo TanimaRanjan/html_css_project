@@ -13,7 +13,7 @@
     "compress:css": "node-sass styles/style.prefix.css styles/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css postfix:css compress:css"
   },
-  "author": "",
+  "author": "Tanima Ranjan",
   "license": "ISC",
   "dependencies": {
     "live-server": "^1.2.1"
