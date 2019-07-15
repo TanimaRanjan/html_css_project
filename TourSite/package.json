@@ -4,18 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
     "watch:sass": "node-sass sass/main.scss styles/style.css --watch",
-    "dev-server":"live-server",
-    "start":"npm-run-all --parallel dev-server watch:sass",
-    
+    "dev-server": "live-server",
+    "start": "npm-run-all --parallel dev-server watch:sass",
     "compile:sass": "node-sass sass/main.scss styles/style.comp.css",
     "concat:css": "concat -o styles/style.concat.css styles/icon-font.css styles/style.comp.css",
     "postfix:css": "postcss --user autoprefixer -b 'last 10 versions' styles/style.concat.css -o styles/style.prefix.css",
     "compress:css": "node-sass styles/style.prefix.css styles/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css postfix:css compress:css"
   },
-  "author": "",
+  "author": "Tanima Ranjan",
   "license": "ISC",
   "dependencies": {
     "live-server": "^1.2.1"
