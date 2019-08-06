@@ -845,7 +845,6 @@ a:visited {
   justify-content: stretch;
   align-content: stretch;
   align-items: stretch;
-  gri
   grid-gap: 30px; }
 
 .feature {
@@ -973,10 +972,6 @@ a:visited {
   background-position: 100%;
   color: #55c57a;
   transform: translateX(1rem); }
-
-.navigation__link:active ~ .navigation__nav {
-  opacity: 0;
-  width: 0; }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
